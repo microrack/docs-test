@@ -91,6 +91,10 @@ nav:
     - ADSR: modules/adsr.md
     - LFO: modules/lfo.md
     - Mixer: modules/mixer.md
+  - Standard:
+    - Overview: standard/index.md
+    - Mechanical: standard/mechanical.md
+    - Electronical: standard/electronical.md
   - Ecosystem:
     - Overview: ecosystem/index.md
     - Power: ecosystem/power.md

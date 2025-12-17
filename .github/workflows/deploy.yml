@@ -6,6 +6,8 @@ on:
       - main
       - master
   workflow_dispatch:
+  repository_dispatch:
+    types: [specs-updated]
 
 permissions:
   contents: read
@@ -20,17 +22,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout docs
         uses: actions/checkout@v4
-        
+
+      - name: Fetch specs content
+        run: |
+          mkdir -p docs/standard
+          curl -sL "https://raw.githubusercontent.com/microrack/specs-test/master/standard/mechanical.md" -o docs/standard/mechanical.md
+          curl -sL "https://raw.githubusercontent.com/microrack/specs-test/master/standard/electronical.md" -o docs/standard/electronical.md
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           
       - name: Install dependencies
-        run: |
-          pip install mkdocs-material mkdocs-minify-plugin
+        run: pip install mkdocs-material mkdocs-minify-plugin
           
       - name: Build site
         run: mkdocs build
