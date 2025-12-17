@@ -87,15 +87,16 @@ body, .md-typeset {
 }
 
 /* ========================================
-   WHITE FOOTER (like main website)
+   WHITE FOOTER
    ======================================== */
 .md-footer {
-  background-color: #1a1a1a !important;
-  color: #999 !important;
+  background-color: #ffffff !important;
+  color: #333 !important;
+  border-top: 1px solid #eee;
 }
 
 .md-footer-meta {
-  background-color: #1a1a1a !important;
+  background-color: #ffffff !important;
 }
 
 .md-footer-meta__inner {
@@ -113,7 +114,7 @@ body, .md-typeset {
 }
 
 .md-copyright a {
-  color: #999 !important;
+  color: #333 !important;
 }
 
 /* Social icons in footer */
@@ -122,11 +123,11 @@ body, .md-typeset {
 }
 
 .md-social__link {
-  color: #999 !important;
+  color: #666 !important;
 }
 
 .md-social__link:hover {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .md-social__link svg {
@@ -136,19 +137,19 @@ body, .md-typeset {
 
 /* Footer navigation (prev/next) */
 .md-footer__inner {
-  background-color: transparent;
+  background-color: #f8f8f8 !important;
 }
 
 .md-footer__link {
-  color: #999 !important;
+  color: #333 !important;
 }
 
 .md-footer__link:hover {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .md-footer__title {
-  color: #ccc !important;
+  color: #333 !important;
   font-family: 'Martian Mono', monospace !important;
 }
 
@@ -156,4 +157,9 @@ body, .md-typeset {
   color: #666 !important;
   font-family: 'Martian Mono', monospace !important;
   font-size: 0.7rem;
+}
+
+/* Footer icon arrows */
+.md-footer__button {
+  color: #333 !important;
 }
