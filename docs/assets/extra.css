@@ -2,9 +2,9 @@
 @font-face {
   font-family: 'Martian Mono';
   src: url('martian-mono.woff2') format('woff2');
-  font-weight: 400;
+  font-weight: 100 900;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Prevent font jumping */
 }
 
 /* Apply Martian Mono globally */
@@ -15,17 +15,23 @@
 
 body, .md-typeset {
   font-family: 'Martian Mono', monospace !important;
+  font-weight: 400 !important;
 }
 
-/* Header branding */
+/* Header branding - NOT bold */
 .md-header__title {
   font-family: 'Martian Mono', monospace !important;
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .md-header__topic {
   font-family: 'Martian Mono', monospace !important;
+  font-weight: 400 !important;
+}
+
+.md-header__topic:first-child {
+  font-weight: 400 !important;
 }
 
 /* Logo sizing - match text cap height */
@@ -43,11 +49,13 @@ body, .md-typeset {
 .md-tabs__link {
   font-family: 'Martian Mono', monospace !important;
   font-size: 0.75rem;
+  font-weight: 400 !important;
 }
 
 /* Sidebar */
 .md-nav__link {
   font-family: 'Martian Mono', monospace !important;
+  font-weight: 400 !important;
 }
 
 /* Search */
@@ -55,13 +63,14 @@ body, .md-typeset {
   font-family: 'Martian Mono', monospace !important;
 }
 
-/* Headings */
+/* Headings - allow bold */
 .md-typeset h1, .md-typeset h2, .md-typeset h3, 
 .md-typeset h4, .md-typeset h5, .md-typeset h6 {
   font-family: 'Martian Mono', monospace !important;
+  font-weight: 500 !important;
 }
 
-/* Code blocks keep same font */
+/* Code blocks */
 .md-typeset code, .md-typeset pre {
   font-family: 'Martian Mono', monospace !important;
 }
