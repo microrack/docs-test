@@ -21,7 +21,7 @@ body, .md-typeset {
 .md-header__title {
   font-family: 'Martian Mono', monospace !important;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .md-header__topic {
