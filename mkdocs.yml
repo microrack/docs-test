@@ -75,7 +75,7 @@ extra:
 extra_css:
   - assets/extra.css
 extra_javascript:
-  - assets/article-copy.js
+  - assets/article-copy.v2.js
 
 copyright: Copyright &copy; 2024-2025 MICRORACK
 
