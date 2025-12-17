@@ -1,0 +1,11 @@
+{
+  "title": "Modules",
+  "pages": [
+    "vco",
+    "vcf",
+    "vca",
+    "adsr",
+    "lfo",
+    "mixer"
+  ]
+}

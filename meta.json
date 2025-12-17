@@ -3,6 +3,8 @@
   "pages": [
     "getting-started",
     "user-guide",
-    "tutorials"
+    "tutorials",
+    "ecosystem",
+    "modules"
   ]
 }
