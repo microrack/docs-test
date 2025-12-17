@@ -74,11 +74,13 @@ extra:
 
 extra_css:
   - assets/extra.css
+extra_javascript:
+  - assets/article-copy.js
 
 copyright: Copyright &copy; 2024-2025 MICRORACK
 
 nav:
-  - Home: index.md
+  - About: index.md
   - Getting Started:
     - Introduction: getting-started/index.md
     - First Steps: getting-started/first-steps.md

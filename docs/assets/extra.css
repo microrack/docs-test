@@ -163,3 +163,36 @@ body, .md-typeset {
 .md-footer__button {
   color: #000 !important;
 }
+
+/* Copy article button */
+.article-copy-button {
+  float: right;
+  margin-left: 0.75rem;
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f8f8f8;
+  color: #111;
+  font-family: 'Martian Mono', monospace;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.article-copy-button:hover {
+  background: #eee;
+  border-color: #bbb;
+}
+
+.article-copy-button--success {
+  background: #e8f5e9;
+  border-color: #4caf50;
+  color: #1b5e20;
+}
+
+.article-copy-button--error {
+  background: #fdecea;
+  border-color: #f44336;
+  color: #b71c1c;
+}
