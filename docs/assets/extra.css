@@ -164,6 +164,11 @@ body, .md-typeset {
   color: #000 !important;
 }
 
+/* Hide paragraph anchor glyphs on headings */
+.md-typeset .headerlink {
+  display: none !important;
+}
+
 /* Copy article button */
 .article-copy-button {
   float: right;
