@@ -164,9 +164,23 @@ body, .md-typeset {
   color: #000 !important;
 }
 
-/* Hide paragraph anchor glyphs on headings */
+/* Heading anchor icon (replace ¶ with link glyph) */
 .md-typeset .headerlink {
-  display: none !important;
+  display: inline-block !important;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.35rem;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: center / 1em 1em no-repeat
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.07 0l2.12-2.12a5 5 0 1 0-7.07-7.07L10 6'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.07 0l-2.12 2.12a5 5 0 0 0 7.07 7.07L14 18'/%3E%3C/svg%3E");
+  opacity: 0.6;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.md-typeset .headerlink:hover {
+  opacity: 1;
+  filter: brightness(0) saturate(1.2);
 }
 
 /* Copy article button */
