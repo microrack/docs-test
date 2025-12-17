@@ -17,26 +17,26 @@ body, .md-typeset {
   font-family: 'Martian Mono', monospace !important;
 }
 
-/* Header branding */
+/* Header branding - bigger title */
 .md-header__title {
   font-family: 'Martian Mono', monospace !important;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .md-header__topic {
   font-family: 'Martian Mono', monospace !important;
 }
 
-/* Logo sizing and make it white for dark header */
+/* Logo sizing - match bigger title */
 .md-header__button.md-logo {
   padding: 0.2rem;
 }
 
 .md-header__button.md-logo img {
-  height: 1.2rem;
+  height: 1.6rem;
   width: auto;
-  filter: brightness(0) invert(1); /* Make logo white */
+  filter: brightness(0) invert(1);
 }
 
 /* Navigation tabs */
