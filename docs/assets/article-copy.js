@@ -6,25 +6,36 @@ document.addEventListener('DOMContentLoaded', () => {
   btn.type = 'button';
   btn.className = 'article-copy-button';
   btn.setAttribute('aria-label', 'Copy full article');
-  btn.textContent = 'Copy article';
+
+  const ICON_DEFAULT = '⧉';
+  const ICON_SUCCESS = '✓';
+  const ICON_ERROR = '⚠';
+
+  const setState = (icon, stateClass, label) => {
+    btn.textContent = icon;
+    btn.setAttribute('aria-label', label);
+    btn.classList.remove('article-copy-button--success', 'article-copy-button--error');
+    if (stateClass) btn.classList.add(stateClass);
+  };
+
+  setState(ICON_DEFAULT, null, 'Copy full article');
 
   const copyArticle = async () => {
-    const text = article.innerText || '';
+    const clone = article.cloneNode(true);
+    const copyBtn = clone.querySelector('.article-copy-button');
+    if (copyBtn) copyBtn.remove();
+    const text = (clone.innerText || '').trim();
     if (!text.trim()) return;
     try {
       await navigator.clipboard.writeText(text);
-      btn.textContent = 'Copied';
-      btn.classList.add('article-copy-button--success');
+      setState(ICON_SUCCESS, 'article-copy-button--success', 'Copied full article');
       setTimeout(() => {
-        btn.textContent = 'Copy article';
-        btn.classList.remove('article-copy-button--success');
+        setState(ICON_DEFAULT, null, 'Copy full article');
       }, 2000);
     } catch (err) {
-      btn.textContent = 'Copy failed';
-      btn.classList.add('article-copy-button--error');
+      setState(ICON_ERROR, 'article-copy-button--error', 'Copy failed');
       setTimeout(() => {
-        btn.textContent = 'Copy article';
-        btn.classList.remove('article-copy-button--error');
+        setState(ICON_DEFAULT, null, 'Copy full article');
       }, 2000);
     }
   };
