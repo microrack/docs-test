@@ -9,14 +9,12 @@ repo_url: https://github.com/microrack/docs-test
 theme:
   name: material
   palette:
-    # Light mode
     - scheme: default
       primary: deep purple
       accent: green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
     - scheme: slate
       primary: deep purple
       accent: green
@@ -31,21 +29,15 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
-    - content.code.annotate
   icon:
     repo: fontawesome/brands/github
-  logo: assets/logo.png
-  favicon: assets/favicon.png
 
 plugins:
   - search
-  - minify:
-      minify_html: true
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -56,11 +48,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.details
-  - pymdownx.mark
   - admonition
   - tables
   - attr_list
-  - md_in_html
   - toc:
       permalink: true
 
@@ -81,6 +71,7 @@ nav:
     - First Steps: getting-started/first-steps.md
     - Setup: getting-started/setup.md
   - Modules:
+    - Overview: modules/index.md
     - VCO: modules/vco.md
     - VCF: modules/vcf.md
     - VCA: modules/vca.md
@@ -88,6 +79,7 @@ nav:
     - LFO: modules/lfo.md
     - Mixer: modules/mixer.md
   - Ecosystem:
+    - Overview: ecosystem/index.md
     - Power: ecosystem/power.md
     - I/O: ecosystem/io.md
     - Chassis: ecosystem/chassis.md

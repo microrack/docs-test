@@ -4,41 +4,13 @@ Welcome to the official documentation for **MICRORACK** - a compact modular synt
 
 ## Quick Links
 
-<div class="grid cards" markdown>
-
--   :material-rocket-launch:{ .lg .middle } **Getting Started**
-
-    ---
-
-    New to MICRORACK? Start here to learn the basics.
-
-    [:octicons-arrow-right-24: Getting Started](getting-started/index.md)
-
--   :material-chip:{ .lg .middle } **Modules**
-
-    ---
-
-    Explore all available modules and their specifications.
-
-    [:octicons-arrow-right-24: Modules](modules/index.md)
-
--   :material-connection:{ .lg .middle } **Ecosystem**
-
-    ---
-
-    Learn about power, I/O, and system connectivity.
-
-    [:octicons-arrow-right-24: Ecosystem](ecosystem/index.md)
-
--   :material-school:{ .lg .middle } **Tutorials**
-
-    ---
-
-    Step-by-step guides for common tasks.
-
-    [:octicons-arrow-right-24: Tutorials](tutorials/index.md)
-
-</div>
+| Section | Description |
+|---------|-------------|
+| [Getting Started](getting-started/index.md) | New to MICRORACK? Start here to learn the basics. |
+| [Modules](modules/index.md) | Explore all available modules and their specifications. |
+| [Ecosystem](ecosystem/index.md) | Learn about power, I/O, and system connectivity. |
+| [Tutorials](tutorials/index.md) | Step-by-step guides for common tasks. |
+| [User Guide](user-guide/index.md) | Best practices and patching techniques. |
 
 ## What is MICRORACK?
 
