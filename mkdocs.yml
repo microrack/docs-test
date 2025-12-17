@@ -1,4 +1,4 @@
-site_name: MICRORACK Documentation
+site_name: MICRORACK | Docs
 site_url: https://docs.microrack.org
 site_description: User guides and tutorials for MICRORACK modular synthesizer system
 site_author: MICRORACK
@@ -8,6 +8,8 @@ repo_url: https://github.com/microrack/docs-test
 
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
   palette:
     - scheme: default
       primary: deep purple
@@ -61,6 +63,9 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/microrack
   generator: false
+
+extra_css:
+  - assets/extra.css
 
 copyright: Copyright &copy; 2024-2025 MICRORACK
 
