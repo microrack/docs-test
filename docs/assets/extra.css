@@ -75,7 +75,85 @@ body, .md-typeset {
   font-family: 'Martian Mono', monospace !important;
 }
 
-/* Table of contents */
+/* Table of contents - green title */
+.md-nav--secondary > .md-nav__title {
+  color: #4caf50 !important;
+  font-family: 'Martian Mono', monospace !important;
+  font-weight: 500 !important;
+}
+
 .md-nav--secondary .md-nav__link {
   font-family: 'Martian Mono', monospace !important;
+}
+
+/* ========================================
+   WHITE FOOTER (like main website)
+   ======================================== */
+.md-footer {
+  background-color: #1a1a1a !important;
+  color: #999 !important;
+}
+
+.md-footer-meta {
+  background-color: #1a1a1a !important;
+}
+
+.md-footer-meta__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Copyright text */
+.md-copyright {
+  color: #666 !important;
+  font-family: 'Martian Mono', monospace !important;
+  font-size: 0.7rem;
+}
+
+.md-copyright a {
+  color: #999 !important;
+}
+
+/* Social icons in footer */
+.md-social {
+  padding: 0;
+}
+
+.md-social__link {
+  color: #999 !important;
+}
+
+.md-social__link:hover {
+  color: #fff !important;
+}
+
+.md-social__link svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Footer navigation (prev/next) */
+.md-footer__inner {
+  background-color: transparent;
+}
+
+.md-footer__link {
+  color: #999 !important;
+}
+
+.md-footer__link:hover {
+  color: #fff !important;
+}
+
+.md-footer__title {
+  color: #ccc !important;
+  font-family: 'Martian Mono', monospace !important;
+}
+
+.md-footer__direction {
+  color: #666 !important;
+  font-family: 'Martian Mono', monospace !important;
+  font-size: 0.7rem;
 }

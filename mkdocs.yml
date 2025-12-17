@@ -55,10 +55,21 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/microrack.synth
+      name: Instagram
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/microrack.synth
+      name: Facebook
     - icon: fontawesome/brands/github
       link: https://github.com/microrack
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/microrack
+      name: GitHub
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/microrack_synth
+      name: Twitter / X
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@microrack-modular-synth
+      name: YouTube
   generator: false
 
 extra_css:
