@@ -1,4 +1,4 @@
-/* Martian Mono font for branding */
+/* Martian Mono font for entire site */
 @font-face {
   font-family: 'Martian Mono';
   src: url('https://microrack.org/fonts/martian-mono/latin.woff2') format('woff2');
@@ -7,19 +7,65 @@
   font-display: swap;
 }
 
-/* Header branding with Martian Mono */
+/* Apply Martian Mono globally */
+:root {
+  --md-text-font: 'Martian Mono', monospace;
+  --md-code-font: 'Martian Mono', monospace;
+}
+
+body, .md-typeset {
+  font-family: 'Martian Mono', monospace !important;
+}
+
+/* Header branding */
 .md-header__title {
   font-family: 'Martian Mono', monospace !important;
+  font-size: 0.85rem;
   font-weight: 500;
-  letter-spacing: -0.5px;
 }
 
 .md-header__topic {
   font-family: 'Martian Mono', monospace !important;
 }
 
-/* Logo sizing */
+/* Logo sizing - match text height */
+.md-header__button.md-logo {
+  padding: 0.2rem;
+}
+
 .md-header__button.md-logo img {
-  height: 24px;
+  height: 1.2rem;
   width: auto;
+}
+
+/* Navigation tabs */
+.md-tabs__link {
+  font-family: 'Martian Mono', monospace !important;
+  font-size: 0.75rem;
+}
+
+/* Sidebar */
+.md-nav__link {
+  font-family: 'Martian Mono', monospace !important;
+}
+
+/* Search */
+.md-search__input {
+  font-family: 'Martian Mono', monospace !important;
+}
+
+/* Headings */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, 
+.md-typeset h4, .md-typeset h5, .md-typeset h6 {
+  font-family: 'Martian Mono', monospace !important;
+}
+
+/* Code blocks keep same font */
+.md-typeset code, .md-typeset pre {
+  font-family: 'Martian Mono', monospace !important;
+}
+
+/* Table of contents */
+.md-nav--secondary .md-nav__link {
+  font-family: 'Martian Mono', monospace !important;
 }
