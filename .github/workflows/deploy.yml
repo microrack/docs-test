@@ -28,8 +28,13 @@ jobs:
       - name: Fetch specs content
         run: |
           mkdir -p docs/standard
-          curl -sL "https://raw.githubusercontent.com/microrack/specs-test/master/standard/mechanical.md" -o docs/standard/mechanical.md
-          curl -sL "https://raw.githubusercontent.com/microrack/specs-test/master/standard/electronical.md" -o docs/standard/electronical.md
+          # Add timestamp to bust cache
+          curl -sL "https://raw.githubusercontent.com/microrack/specs-test/master/mechanical.md?$(date +%s)" -o docs/standard/mechanical.md
+          curl -sL "https://raw.githubusercontent.com/microrack/specs-test/master/electronical.md?$(date +%s)" -o docs/standard/electronical.md
+          echo "=== Fetched mechanical.md ==="
+          cat docs/standard/mechanical.md
+          echo "=== Fetched electronical.md ==="
+          cat docs/standard/electronical.md
 
       - name: Setup Python
         uses: actions/setup-python@v5
