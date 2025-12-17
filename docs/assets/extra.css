@@ -1,7 +1,7 @@
 /* Martian Mono font for entire site */
 @font-face {
   font-family: 'Martian Mono';
-  src: url('https://microrack.org/fonts/martian-mono/latin.woff2') format('woff2');
+  src: url('martian-mono.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
