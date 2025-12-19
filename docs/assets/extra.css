@@ -108,6 +108,7 @@ body, .md-typeset {
   box-shadow: none !important;
   position: relative;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 [data-md-color-scheme="slate"] .md-tabs {
@@ -125,6 +126,7 @@ body, .md-typeset {
   background-repeat: repeat-x;
   background-size: 100% 20px;
   pointer-events: none;
+  background-color: var(--md-default-bg-color);
 }
 
 [data-md-color-scheme="slate"] .md-tabs::after {
