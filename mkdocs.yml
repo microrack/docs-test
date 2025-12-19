@@ -88,6 +88,7 @@ nav:
   - Modules:
     - Modules: modules/index.md
     - mod-clk: modules/mod-clk/README.md
+    - mod-comp: modules/mod-comp/README.md
     - mod-delay: modules/mod-delay/README.md
     - mod-env: modules/mod-env/README.md
     - mod-eq: modules/mod-eq/README.md

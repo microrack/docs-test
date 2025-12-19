@@ -12,8 +12,8 @@ __pycache__/
 *$py.class
 
 # Cloned repositories (fetched during build)
-modules/
-specification/
+/modules/
+/specification/
 
 # Copied content from cloned repos (fetched during build)
 docs/modules/*
