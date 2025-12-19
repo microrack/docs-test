@@ -1,4 +1,4 @@
-# MICRORACK Modules
+# Modules
 
 MICRORACK modules are compact synthesizer building blocks following the MICRORACK specification.
 

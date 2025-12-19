@@ -93,4 +93,4 @@ Stage-ready setup:
 
 ---
 
-*See also: [Compatibility](/docs/ecosystem/compatibility) for connecting to other systems.*
+*See also: [Compatibility](/ecosystem/compatibility) for connecting to other systems.*

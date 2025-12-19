@@ -64,6 +64,9 @@ jobs:
           
       - name: Install dependencies
         run: pip install mkdocs-material mkdocs-minify-plugin
+      
+      - name: Update navigation
+        run: python scripts/update_nav.py
           
       - name: Build site
         run: mkdocs build

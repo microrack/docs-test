@@ -11,13 +11,15 @@ theme:
   logo: assets/logo.png
   favicon: assets/logo.png
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: deep purple
       accent: green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: deep purple
       accent: green
       toggle:
@@ -78,49 +80,47 @@ extra_css:
 copyright: Copyright &copy; 2019-2025 MICRORACK Inc
 
 nav:
-  - About: index.md
+  - Docs: index.md
   - Getting Started:
     - Introduction: getting-started/index.md
-    - First Steps: getting-started/first-steps.md
-    - Setup: getting-started/setup.md
+    - First Steps: getting-started/first-steps/index.md
+    - Setup: getting-started/setup/index.md
   - Modules:
-    - Overview: modules/index.md
-    - mod-vco: modules/mod-vco/README.md
-    - mod-noise: modules/mod-noise/README.md
-    - mod-vcf: modules/mod-vcf/README.md
-    - mod-delay: modules/mod-delay/README.md
-    - mod-eq: modules/mod-eq/README.md
-    - mod-comp: modules/mod-comp/README.md
-    - mod-sat: modules/mod-sat/README.md
-    - mod-lpg: modules/mod-lpg/README.md
-    - mod-env: modules/mod-env/README.md
-    - mod-lfo: modules/mod-lfo/README.md
-    - mod-seq: modules/mod-seq/README.md
-    - mod-mix: modules/mod-mix/README.md
+    - Modules: modules/index.md
     - mod-clk: modules/mod-clk/README.md
-    - mod-key: modules/mod-key/README.md
+    - mod-delay: modules/mod-delay/README.md
+    - mod-env: modules/mod-env/README.md
+    - mod-eq: modules/mod-eq/README.md
     - mod-in-63: modules/mod-in-63/README.md
+    - mod-jacket: modules/mod-jacket/README.md
+    - mod-key: modules/mod-key/README.md
+    - mod-lpg: modules/mod-lpg/README.md
+    - mod-midi: modules/mod-midi/README.md
+    - mod-mix: modules/mod-mix/README.md
+    - mod-noise: modules/mod-noise/README.md
     - mod-out-35: modules/mod-out-35/README.md
     - mod-out-63: modules/mod-out-63/README.md
-    - mod-midi: modules/mod-midi/README.md
-    - mod-jacket: modules/mod-jacket/README.md
+    - mod-sat: modules/mod-sat/README.md
+    - mod-seq: modules/mod-seq/README.md
+    - mod-vcf: modules/mod-vcf/README.md
+    - mod-vco: modules/mod-vco/README.md
   - Specification:
-    - Overview: specification/index.md
+    - Specification: specification/index.md
     - Mechanical: specification/mechanical.md
     - Electronical: specification/electronical.md
   - Ecosystem:
-    - Overview: ecosystem/index.md
-    - Power: ecosystem/power.md
-    - I/O: ecosystem/io.md
-    - Chassis: ecosystem/chassis.md
-    - Chaining: ecosystem/chaining.md
-    - Compatibility: ecosystem/compatibility.md
-    - Use Cases: ecosystem/use-cases.md
+    - ecosystem/index.md
+    - Power: ecosystem/power/index.md
+    - I/O: ecosystem/io/index.md
+    - Chassis: ecosystem/chassis/index.md
+    - Chaining: ecosystem/chaining/index.md
+    - Compatibility: ecosystem/compatibility/index.md
+    - Use Cases: ecosystem/use-cases/index.md
   - Tutorials:
-    - Overview: tutorials/index.md
-    - Bass Patch: tutorials/bass-patch.md
-    - Ambient Pad: tutorials/ambient-pad.md
+    - tutorials/index.md
+    - Bass Patch: tutorials/bass-patch/index.md
+    - Ambient Pad: tutorials/ambient-pad/index.md
   - User Guide:
-    - Overview: user-guide/index.md
-    - Patching Techniques: user-guide/patching-techniques.md
-    - Sound Design: user-guide/sound-design.md
+    - user-guide/index.md
+    - Patching Techniques: user-guide/patching-techniques/index.md
+    - Sound Design: user-guide/sound-design/index.md

@@ -15,8 +15,11 @@ __pycache__/
 modules/
 specification/
 
-# Keep only index.md files in docs
+# Copied content from cloned repos (fetched during build)
+docs/modules/*
 !docs/modules/index.md
+
+docs/specification/*
 !docs/specification/index.md
 
 # IDE

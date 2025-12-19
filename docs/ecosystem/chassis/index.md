@@ -57,4 +57,4 @@ MICRORACK modules work with:
 
 ---
 
-*See also: [Compatibility](/docs/ecosystem/compatibility) for format cross-compatibility.*
+*See also: [Compatibility](/ecosystem/compatibility) for format cross-compatibility.*

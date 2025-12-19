@@ -37,4 +37,4 @@ Learn how to properly configure your MICRORACK system for optimal performance.
 
 ## Next Steps
 
-Once setup is complete, head to the [User Guide](../user-guide) to learn advanced techniques.
+Once setup is complete, head to the [User Guide](/user-guide) to learn advanced techniques.

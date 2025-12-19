@@ -41,4 +41,4 @@ The ESP32 Pro Module provides MIDI connectivity:
 
 ---
 
-*See also: [Compatibility](/docs/ecosystem/compatibility) for connecting to other modular formats.*
+*See also: [Compatibility](/ecosystem/compatibility) for connecting to other modular formats.*
