@@ -34,7 +34,7 @@ VCO2 ─┘
 ### VCO1
 - **Waveform**: Sawtooth
 - **Octave**: 0 (middle range)
-- **Tuning**: Standard (A = 440Hz)
+- **Tuning**: Specification (A = 440Hz)
 
 ### VCO2
 - **Waveform**: Sawtooth

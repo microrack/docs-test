@@ -20,14 +20,14 @@ The Jack Output module provides audio output to external equipment:
 - **3.5mm output**: For connecting to mixers or audio interfaces
 - **6.3mm output**: For connecting to amplifiers or headphones
 - **Volume control**: Adjustable output level
-- **Headphone compatible**: Can drive standard headphones
+- **Headphone compatible**: Can drive Specification headphones
 
 ## CV I/O
 
 Control voltage signals can be patched externally:
 
 - **CV outputs**: 0-5V range, compatible with most external gear
-- **CV inputs**: Accepts standard modular CV signals
+- **CV inputs**: Accepts Specification modular CV signals
 - **Attenuation**: Many modules include input attenuators
 
 ## MIDI

@@ -1,12 +1,12 @@
 # About MICRORACK
 
-MICRORACK is a compact, affordable modular synthesizer system designed for learners, makers, and performers. This site holds the documentation, standards, and how-tos you need to build, patch, and integrate MICRORACK.
+MICRORACK is a compact, affordable modular synthesizer system designed for learners, makers, and performers. This site holds the documentation, Specifications, and how-tos you need to build, patch, and integrate MICRORACK.
 
 ## Start Here
 
 - [Getting Started](getting-started/index.md) — setup and first patches
 - [Modules](modules/index.md) — module overviews and specs
-- [Standard](standard/index.md) — mechanical and electronical specifications
+- [Specification](Specification/index.md) — mechanical and electronical specifications
 - [Ecosystem](ecosystem/index.md) — power, I/O, and system connectivity
 - [Tutorials](tutorials/index.md) — hands-on guides
 - [User Guide](user-guide/index.md) — techniques and best practices

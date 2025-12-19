@@ -16,12 +16,12 @@ The official MICRORACK Chassis provides:
 | Model | Capacity | Dimensions |
 |-------|----------|------------|
 | Chassis Mini | 5-8 modules | 15 × 10 cm |
-| Chassis Standard | 10-15 modules | 20 × 12 cm |
+| Chassis Specification | 10-15 modules | 20 × 12 cm |
 | Chassis Pro | 20+ modules | 30 × 15 cm |
 
 ## Rack Chassis
 
-For integration with standard rack equipment:
+For integration with Specification rack equipment:
 
 - 19" rack mountable
 - 3U height
@@ -41,7 +41,7 @@ Developed in collaboration with Tangible Waves:
 
 MICRORACK modules work with:
 
-- Standard breadboards (standalone use)
+- Specification breadboards (standalone use)
 - 3D printed enclosures (community designs)
 - Custom wooden cases
 - Acrylic laser-cut cases

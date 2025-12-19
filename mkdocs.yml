@@ -1,6 +1,6 @@
-site_name: MICRORACK | Docs
+site_name: Docs
 site_url: https://docs.microrack.org
-site_description: User guides and tutorials for MICRORACK modular synthesizer system
+site_description: User guides and documentation for MICRORACK modular synthesizer system
 site_author: MICRORACK
 
 repo_name: microrack/docs
@@ -74,10 +74,8 @@ extra:
 
 extra_css:
   - assets/extra.css
-extra_javascript:
-  - assets/article-copy.v2.js
 
-copyright: Copyright &copy; 2024-2025 MICRORACK
+copyright: Copyright &copy; 2019-2025 MICRORACK Inc
 
 nav:
   - About: index.md
@@ -87,16 +85,29 @@ nav:
     - Setup: getting-started/setup.md
   - Modules:
     - Overview: modules/index.md
-    - VCO: modules/vco.md
-    - VCF: modules/vcf.md
-    - VCA: modules/vca.md
-    - ADSR: modules/adsr.md
-    - LFO: modules/lfo.md
-    - Mixer: modules/mixer.md
-  - Standard:
-    - Overview: standard/index.md
-    - Mechanical: standard/mechanical.md
-    - Electronical: standard/electronical.md
+    - mod-vco: modules/mod-vco/README.md
+    - mod-noise: modules/mod-noise/README.md
+    - mod-vcf: modules/mod-vcf/README.md
+    - mod-delay: modules/mod-delay/README.md
+    - mod-eq: modules/mod-eq/README.md
+    - mod-comp: modules/mod-comp/README.md
+    - mod-sat: modules/mod-sat/README.md
+    - mod-lpg: modules/mod-lpg/README.md
+    - mod-env: modules/mod-env/README.md
+    - mod-lfo: modules/mod-lfo/README.md
+    - mod-seq: modules/mod-seq/README.md
+    - mod-mix: modules/mod-mix/README.md
+    - mod-clk: modules/mod-clk/README.md
+    - mod-key: modules/mod-key/README.md
+    - mod-in-63: modules/mod-in-63/README.md
+    - mod-out-35: modules/mod-out-35/README.md
+    - mod-out-63: modules/mod-out-63/README.md
+    - mod-midi: modules/mod-midi/README.md
+    - mod-jacket: modules/mod-jacket/README.md
+  - Specification:
+    - Overview: specification/index.md
+    - Mechanical: specification/mechanical.md
+    - Electronical: specification/electronical.md
   - Ecosystem:
     - Overview: ecosystem/index.md
     - Power: ecosystem/power.md

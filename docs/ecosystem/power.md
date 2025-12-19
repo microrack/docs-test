@@ -48,7 +48,7 @@ Dedicated power distribution:
 
 ### Using Power Rails
 
-Standard breadboards include power rails along the sides:
+Specification breadboards include power rails along the sides:
 
 1. Connect power supply to rail at one end
 2. Modules draw power from rail connections

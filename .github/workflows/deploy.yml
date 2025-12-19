@@ -25,16 +25,37 @@ jobs:
       - name: Checkout docs
         uses: actions/checkout@v4
 
-      - name: Fetch specs content
+      - name: Checkout specs
+        uses: actions/checkout@v4
+        with:
+          repository: microrack/specs-test
+          path: specification
+
+      - name: Checkout modules
+        uses: actions/checkout@v4
+        with:
+          repository: microrack/modules-test
+          path: modules
+
+      - name: Copy specs content
         run: |
-          mkdir -p docs/standard
-          # Add timestamp to bust cache
-          curl -sL "https://raw.githubusercontent.com/microrack/specs-test/master/mechanical.md?$(date +%s)" -o docs/standard/mechanical.md
-          curl -sL "https://raw.githubusercontent.com/microrack/specs-test/master/electronical.md?$(date +%s)" -o docs/standard/electronical.md
-          echo "=== Fetched mechanical.md ==="
-          cat docs/standard/mechanical.md
-          echo "=== Fetched electronical.md ==="
-          cat docs/standard/electronical.md
+          mkdir -p docs/specification
+          cp specification/mechanical.md docs/specification/
+          cp specification/electronical.md docs/specification/
+          echo "=== Copied mechanical.md ==="
+          cat docs/specification/mechanical.md
+          echo "=== Copied electronical.md ==="
+          cat docs/specification/electronical.md
+
+      - name: Copy modules content
+        run: |
+          # Copy each module directory with all its contents
+          for dir in modules/mod-*/; do
+            module=$(basename "$dir")
+            cp -r "$dir" "docs/modules/"
+            echo "Copied ${module}/"
+          done
+          ls -la docs/modules/
 
       - name: Setup Python
         uses: actions/setup-python@v5

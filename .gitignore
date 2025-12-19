@@ -1,0 +1,28 @@
+# Build artifacts
+site/
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cloned repositories (fetched during build)
+modules/
+specification/
+
+# Keep only index.md files in docs
+!docs/modules/index.md
+!docs/specification/index.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

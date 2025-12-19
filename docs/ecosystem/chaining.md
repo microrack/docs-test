@@ -27,7 +27,7 @@ Use short, thick wire (22AWG or larger) to minimize voltage drop.
 
 ### Signal Patching
 
-Connect modules across breadboards with standard patch cables:
+Connect modules across breadboards with Specification patch cables:
 
 - Keep cables organized
 - Use color coding for signal types
