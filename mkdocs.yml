@@ -1,134 +1,127 @@
 site_name: Docs
 site_url: https://docs.microrack.org
-site_description: User guides and documentation for MICRORACK modular synthesizer system
+site_description: User guides and documentation for MICRORACK modular synthesizer
+  system
 site_author: MICRORACK
-
 repo_name: microrack/docs
 repo_url: https://github.com/microrack/docs-test
-
 theme:
   name: material
   logo: assets/logo.png
   favicon: assets/logo.png
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: green
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: green
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: deep purple
+    accent: green
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: deep purple
+    accent: green
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
   features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.code.copy
+  - navigation.instant
+  - navigation.tracking
+  - navigation.tabs
+  - navigation.sections
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.code.copy
   icon:
     repo: fontawesome/brands/github
-
 plugins:
-  - search
-
+- search
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.details
-  - admonition
-  - tables
-  - attr_list
-  - toc:
-      permalink: true
-
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.details
+- admonition
+- tables
+- attr_list
+- toc:
+    permalink: true
 extra:
   social:
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/microrack.synth
-      name: Instagram
-    - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/microrack.synth
-      name: Facebook
-    - icon: fontawesome/brands/github
-      link: https://github.com/microrack
-      name: GitHub
-    - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/microrack_synth
-      name: Twitter / X
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/@microrack-modular-synth
-      name: YouTube
+  - icon: fontawesome/brands/instagram
+    link: https://instagram.com/microrack.synth
+    name: Instagram
+  - icon: fontawesome/brands/facebook
+    link: https://www.facebook.com/microrack.synth
+    name: Facebook
+  - icon: fontawesome/brands/github
+    link: https://github.com/microrack
+    name: GitHub
+  - icon: fontawesome/brands/x-twitter
+    link: https://twitter.com/microrack_synth
+    name: Twitter / X
+  - icon: fontawesome/brands/youtube
+    link: https://www.youtube.com/@microrack-modular-synth
+    name: YouTube
   generator: false
-
 extra_css:
-  - assets/extra.css
-
+- assets/extra.css
 copyright: Copyright &copy; 2019-2025 MICRORACK Inc
-
 nav:
-  - Home:
-    - About: index.md
-    - Getting Started: getting-started/index.md
-    - Modules: modules/index.md
-    - Specification: specification/index.md
-    - Ecosystem: ecosystem/index.md
-    - Tutorials: tutorials/index.md
-    - User Guide: user-guide/index.md
-  - Getting Started:
-    - Introduction: getting-started/index.md
-    - First Steps: getting-started/first-steps/index.md
-    - Setup: getting-started/setup/index.md
-  - Modules:
-    - Modules: modules/index.md
-    - mod-clk: modules/mod-clk/README.md
-    - mod-comp: modules/mod-comp/README.md
-    - mod-delay: modules/mod-delay/README.md
-    - mod-env: modules/mod-env/README.md
-    - mod-eq: modules/mod-eq/README.md
-    - mod-in-63: modules/mod-in-63/README.md
-    - mod-jacket: modules/mod-jacket/README.md
-    - mod-key: modules/mod-key/README.md
-    - mod-lpg: modules/mod-lpg/README.md
-    - mod-midi: modules/mod-midi/README.md
-    - mod-mix: modules/mod-mix/README.md
-    - mod-noise: modules/mod-noise/README.md
-    - mod-out-35: modules/mod-out-35/README.md
-    - mod-out-63: modules/mod-out-63/README.md
-    - mod-sat: modules/mod-sat/README.md
-    - mod-seq: modules/mod-seq/README.md
-    - mod-vcf: modules/mod-vcf/README.md
-    - mod-vco: modules/mod-vco/README.md
-  - Specification:
-    - Specification: specification/index.md
-    - Mechanical: specification/mechanical.md
-    - Electronical: specification/electronical.md
-  - Ecosystem:
-    - ecosystem/index.md
-    - Power: ecosystem/power/index.md
-    - I/O: ecosystem/io/index.md
-    - Chassis: ecosystem/chassis/index.md
-    - Chaining: ecosystem/chaining/index.md
-    - Compatibility: ecosystem/compatibility/index.md
-    - Use Cases: ecosystem/use-cases/index.md
-  - Tutorials:
-    - tutorials/index.md
-    - Bass Patch: tutorials/bass-patch/index.md
-    - Ambient Pad: tutorials/ambient-pad/index.md
-  - User Guide:
-    - user-guide/index.md
-    - Patching Techniques: user-guide/patching-techniques/index.md
-    - Sound Design: user-guide/sound-design/index.md
+- Home:
+  - About: index.md
+  - Getting Started: getting-started/index.md
+  - Modules: modules/index.md
+  - Specification: specification/index.md
+  - Ecosystem: ecosystem/index.md
+  - Tutorials: tutorials/index.md
+  - User Guide: user-guide/index.md
+- Getting Started:
+  - Introduction: getting-started/index.md
+  - First Steps: getting-started/first-steps/index.md
+  - Setup: getting-started/setup/index.md
+- Modules:
+  - Modules: modules/index.md
+  - mod-clk: modules/mod-clk/README.md
+  - mod-comp: modules/mod-comp/README.md
+  - mod-delay: modules/mod-delay/README.md
+  - mod-env: modules/mod-env/README.md
+  - mod-eq: modules/mod-eq/README.md
+  - mod-in-63: modules/mod-in-63/README.md
+  - mod-jacket: modules/mod-jacket/README.md
+  - mod-key: modules/mod-key/README.md
+  - mod-lpg: modules/mod-lpg/README.md
+  - mod-midi: modules/mod-midi/README.md
+  - mod-mix: modules/mod-mix/README.md
+  - mod-noise: modules/mod-noise/README.md
+  - mod-out-35: modules/mod-out-35/README.md
+  - mod-out-63: modules/mod-out-63/README.md
+  - mod-sat: modules/mod-sat/README.md
+  - mod-seq: modules/mod-seq/README.md
+  - mod-vcf: modules/mod-vcf/README.md
+  - mod-vco: modules/mod-vco/README.md
+- Specification:
+  - Specification: specification/index.md
+  - Mechanical: specification/mechanical.md
+  - Electronical: specification/electronical.md
+- Ecosystem:
+  - ecosystem/index.md
+  - Power: ecosystem/power/index.md
+  - I/O: ecosystem/io/index.md
+  - Chassis: ecosystem/chassis/index.md
+  - Chaining: ecosystem/chaining/index.md
+  - Compatibility: ecosystem/compatibility/index.md
+  - Use Cases: ecosystem/use-cases/index.md
+- Tutorials:
+  - tutorials/index.md
+  - Bass Patch: tutorials/bass-patch/index.md
+  - Ambient Pad: tutorials/ambient-pad/index.md
+- User Guide:
+  - user-guide/index.md
+  - Patching Techniques: user-guide/patching-techniques/index.md
+  - Sound Design: user-guide/sound-design/index.md
