@@ -80,7 +80,14 @@ extra_css:
 copyright: Copyright &copy; 2019-2025 MICRORACK Inc
 
 nav:
-  - Docs: index.md
+  - Home:
+    - About: index.md
+    - Getting Started: getting-started/index.md
+    - Modules: modules/index.md
+    - Specification: specification/index.md
+    - Ecosystem: ecosystem/index.md
+    - Tutorials: tutorials/index.md
+    - User Guide: user-guide/index.md
   - Getting Started:
     - Introduction: getting-started/index.md
     - First Steps: getting-started/first-steps/index.md

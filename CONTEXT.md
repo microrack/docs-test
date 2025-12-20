@@ -1,0 +1,250 @@
+# MICRORACK Documentation Site
+
+This repository contains the documentation site for MICRORACK modular synthesizer system, built with MkDocs Material theme.
+
+## Repository Structure
+
+```
+docs-test/
+├── docs/                          # Documentation source files
+│   ├── index.md                   # Homepage
+│   ├── assets/                    # CSS, fonts, images
+│   │   ├── extra.css             # Custom styling (header, tabs, sawtooth separator)
+│   │   └── martian-mono.woff2    # Custom font
+│   ├── getting-started/           # Getting started guides
+│   │   ├── index.md
+│   │   ├── first-steps/index.md
+│   │   └── setup/index.md
+│   ├── modules/                   # Module documentation (auto-generated from modules-test repo)
+│   │   ├── index.md              # Manual overview page
+│   │   └── mod-*/README.md       # Auto-copied from modules-test (gitignored)
+│   ├── specification/             # Technical specifications (auto-generated from specs-test repo)
+│   │   ├── index.md              # Manual overview page
+│   │   ├── mechanical.md         # Auto-copied (gitignored)
+│   │   └── electronical.md       # Auto-copied (gitignored)
+│   ├── ecosystem/                 # Ecosystem guides
+│   ├── tutorials/                 # Tutorial guides
+│   └── user-guide/                # User guides
+├── scripts/                       # Build scripts
+│   ├── clone-content.sh          # Clone external repos and update navigation
+│   ├── update_nav.py             # Auto-generate modules navigation in mkdocs.yml
+│   └── update_index.py           # Auto-generate index.md links
+├── .github/workflows/
+│   └── deploy.yml                # GitHub Actions deployment workflow
+├── mkdocs.yml                    # MkDocs configuration
+└── .gitignore                    # Git ignore rules
+```
+
+## External Dependencies
+
+The site pulls content from two external repositories at build time:
+
+1. **microrack/modules-test** - Module documentation
+   - Cloned to: `modules/` (root, gitignored)
+   - Copied to: `docs/modules/mod-*/` (gitignored)
+   
+2. **microrack/specs-test** - Technical specifications
+   - Cloned to: `specification/` (root, gitignored)
+   - Copied to: `docs/specification/{mechanical,electronical}.md` (gitignored)
+
+## Build Process
+
+### Local Development
+
+1. Clone the repository
+2. Create Python virtual environment: `python -m venv .venv`
+3. Activate venv: `source .venv/bin/activate`
+4. Install dependencies: `pip install mkdocs-material mkdocs-minify-plugin`
+5. Run clone script: `./scripts/clone-content.sh`
+   - Clones modules-test and specs-test repos
+   - Copies content to docs/
+   - Auto-generates module navigation in mkdocs.yml
+6. Start server: `mkdocs serve`
+7. View at: http://127.0.0.1:8000/
+
+### GitHub Actions Deployment
+
+The `.github/workflows/deploy.yml` workflow:
+
+1. Checks out docs-test repository
+2. Checks out modules-test to `modules/`
+3. Checks out specs-test to `specification/`
+4. Copies specs content to `docs/specification/`
+5. Copies module directories to `docs/modules/`
+6. Installs Python 3.12 and dependencies
+7. Runs `scripts/update_nav.py` to generate module navigation
+8. Builds site with `mkdocs build`
+9. Deploys to GitHub Pages
+
+## Custom Styling
+
+### Theme Customization (`docs/assets/extra.css`)
+
+**Font**: Martian Mono (monospace, woff2)
+- Applied globally to all text and code
+
+**Color Scheme**:
+- Light theme: White backgrounds, black text
+- Dark theme: #1e1e1e backgrounds, white text
+- Auto-detection via `prefers-color-scheme` media queries
+- Manual toggle available
+
+**Header**:
+- Sticky at top
+- White (#ffffff) in light, #1e1e1e in dark
+- Shows 2px shadow (#eee / #333) when tabs hidden (scrolled)
+- Overflow hidden to prevent scrollbars
+
+**Navigation Tabs**:
+- Same colors as header
+- Custom sawtooth waveform separator at bottom
+- 10px padding + 10px margin for separator space
+- Sawtooth: 25px period, 20px height, 2px stroke
+
+**Sawtooth Separator Pattern**:
+```
+Light theme:
+- Top triangle fill: #ffffff
+- Stroke line: #000000
+- Bottom: transparent
+
+Dark theme:
+- Top triangle fill: #1e1e1e
+- Stroke line: #333333
+- Bottom: transparent
+```
+
+**Search Input**:
+- Light: #f5f5f5 background, #ddd border
+- Hover: #eeeeee background
+- Focus: white background, purple (#673ab7) border
+- Dark: #2d2d2d background, #444 border
+
+**Footer**:
+- 2px top border (#eee / #333)
+- Same color scheme as header
+
+**Sidebar Navigation**:
+- Section titles hidden (grey static titles)
+- Nested items indented 1rem (except first item which is index)
+- Martian Mono font, 400 weight
+
+**Headings**:
+- h2-h6 reduce to 70% opacity on hover
+- Clickable via invisible overlay
+- Bold allowed, h1 not clickable
+
+## Navigation Structure
+
+The navigation is defined in `mkdocs.yml` and auto-generated for modules:
+
+```yaml
+nav:
+  - Home: index.md                    # Main landing page
+  - Getting Started: ...              # Manual structure
+  - Modules:                          # Auto-generated by scripts/update_nav.py
+    - Modules: modules/index.md
+    - mod-clk: modules/mod-clk/README.md
+    - mod-comp: modules/mod-comp/README.md
+    # ... (generated from docs/modules/mod-* directories)
+  - Specification: ...                # Manual structure
+  - Ecosystem: ...                    # Manual structure
+  - Tutorials: ...                    # Manual structure
+  - User Guide: ...                   # Manual structure
+```
+
+### Auto-Generated Module Navigation
+
+The `scripts/update_nav.py` script:
+- Scans `docs/modules/` for `mod-*` directories
+- Sorts them alphabetically
+- Updates the Modules section in `mkdocs.yml`
+- Preserves all other navigation sections
+
+This runs automatically:
+- Locally: when running `scripts/clone-content.sh`
+- CI/CD: in GitHub Actions before build
+
+## Configuration Files
+
+### mkdocs.yml
+
+Key settings:
+- **Theme**: Material with deep purple primary, green accent
+- **Features**: instant loading, navigation tracking, tabs, sections, top button
+- **Plugins**: search, minify
+- **Extensions**: code highlighting, tabs, details, admonitions
+- **Custom CSS**: `docs/assets/extra.css`
+
+### .gitignore
+
+Ignores:
+- Build artifacts: `site/`, `__pycache__/`
+- Virtual environment: `.venv/`, `venv/`, `env/`
+- Cloned repos: `/modules/`, `/specification/`
+- Copied content: `docs/modules/*`, `docs/specification/*`
+- Exceptions: `!docs/modules/index.md`, `!docs/specification/index.md`
+
+## Development Notes
+
+### Adding New Modules
+
+1. Add module to microrack/modules-test repository
+2. Run `./scripts/clone-content.sh` locally to test
+3. Navigation updates automatically
+4. Commit and push - GitHub Actions will deploy
+
+### Modifying Styles
+
+1. Edit `docs/assets/extra.css`
+2. Refresh browser (Ctrl+Shift+R for hard refresh)
+3. Test in both light and dark themes
+4. Commit changes
+
+### Troubleshooting
+
+**Modules not showing:**
+- Ensure `scripts/update_nav.py` runs successfully
+- Check that module directories exist in `docs/modules/`
+- Verify `mod-*` naming convention
+
+**Styles not updating:**
+- Hard refresh browser (Ctrl+Shift+R)
+- Clear browser cache
+- Check browser console for CSS errors
+- Verify CSS syntax in extra.css
+
+**Horizontal scroll appearing:**
+- Check `overflow-x: hidden` on html/body
+- Verify header `max-width: 100vw`
+- Inspect sawtooth separator dimensions
+
+**Vertical scroll in header:**
+- Ensure `overflow: hidden` on .md-header
+- Check tabs padding/margin doesn't exceed available space
+
+## Deployment
+
+Site deploys to: https://microrack.github.io/docs-test/
+
+Deployment happens automatically when:
+- Pushing to master branch
+- Manual workflow dispatch
+- Repository dispatch event "specs-updated"
+
+## Dependencies
+
+**Python packages** (installed via pip):
+- mkdocs-material (v9.7.1+)
+- mkdocs-minify-plugin
+- PyYAML (for scripts)
+
+**External repositories**:
+- microrack/modules-test
+- microrack/specs-test
+
+## License & Contact
+
+- Repository: https://github.com/microrack/docs-test
+- Main site: https://microrack.org
+- Support: support@microrack.org

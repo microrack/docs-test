@@ -150,9 +150,74 @@ body, .md-typeset {
   font-weight: 400 !important;
 }
 
-/* Hide section titles in sidebar (grey static titles) */
-.md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link {
-  display: none;
+/* Mobile drawer styling */
+.md-nav__title[for="__drawer"],
+.md-nav__header,
+.md-nav__title {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title[for="__drawer"],
+[data-md-color-scheme="slate"] .md-nav__header,
+[data-md-color-scheme="slate"] .md-nav__title {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+/* Ensure the drawer background itself is correct */
+.md-sidebar--primary,
+.md-nav--primary {
+  background-color: #ffffff !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary,
+[data-md-color-scheme="slate"] .md-nav--primary {
+  background-color: #1e1e1e !important;
+}
+
+/* Logo in drawer */
+.md-nav__title .md-logo img,
+.md-nav__header .md-logo img {
+  filter: none !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title .md-logo img,
+[data-md-color-scheme="slate"] .md-nav__header .md-logo img {
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Active link in drawer */
+.md-nav__link--active {
+  color: #000000 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #ffffff !important;
+}
+
+/* Drawer icons */
+.md-nav__title svg,
+.md-nav__header svg,
+.md-nav__link svg,
+.md-nav__icon {
+  fill: #000000 !important;
+  color: #000000 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title svg,
+[data-md-color-scheme="slate"] .md-nav__header svg,
+[data-md-color-scheme="slate"] .md-nav__link svg,
+[data-md-color-scheme="slate"] .md-nav__icon {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Hide section titles in sidebar on desktop (redundant with tabs) */
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link {
+    display: none;
+  }
 }
 
 /* Indent nested navigation items (except first item which is the index) */
@@ -200,6 +265,10 @@ body, .md-typeset {
 
 [data-md-color-scheme="slate"] .md-search__input::placeholder {
   color: #999999 !important;
+}
+
+.md-search__input+.md-search__icon {
+  color: var(--md-default-fg-color--light);
 }
 
 /* Headings - allow bold, clickable with reduced opacity on hover (h2-h6 only) */
