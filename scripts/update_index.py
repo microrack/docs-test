@@ -46,9 +46,9 @@ def get_nav_sections():
 def get_section_description(title):
     """Get description for each section."""
     descriptions = {
-        'Getting Started': 'setup and first patches',
+        'Setup': 'setup and first patches',
         'Modules': 'module overviews and specs',
-        'Specification': 'mechanical and electronical specifications',
+        'Specification': 'mechanical and electrical specifications',
         'Ecosystem': 'power, I/O, and system connectivity',
         'Tutorials': 'hands-on guides',
         'User Guide': 'techniques and best practices'

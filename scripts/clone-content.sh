@@ -28,7 +28,7 @@ fi
 echo "Copying specifications to docs/specification/..."
 mkdir -p docs/specification
 cp specification/mechanical.md docs/specification/
-cp specification/electronical.md docs/specification/
+cp specification/electrical.md docs/specification/
 
 echo ""
 echo "Updating navigation with module list..."

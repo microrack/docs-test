@@ -41,11 +41,11 @@ jobs:
         run: |
           mkdir -p docs/specification
           cp specification/mechanical.md docs/specification/
-          cp specification/electronical.md docs/specification/
+          cp specification/electrical.md docs/specification/
           echo "=== Copied mechanical.md ==="
           cat docs/specification/mechanical.md
-          echo "=== Copied electronical.md ==="
-          cat docs/specification/electronical.md
+          echo "=== Copied electrical.md ==="
+          cat docs/specification/electrical.md
 
       - name: Copy modules content
         run: |
@@ -63,7 +63,7 @@ jobs:
           python-version: '3.12'
           
       - name: Install dependencies
-        run: pip install mkdocs-material mkdocs-minify-plugin
+        run: pip install mkdocs-material mkdocs-minify-plugin pyyaml
       
       - name: Update navigation
         run: python scripts/update_nav.py

@@ -4,15 +4,15 @@ The MICRORACK ecosystem includes everything you need to build and expand your mo
 
 ## Power & Infrastructure
 
-- [Power](power.md) - Power supply specifications
-- [Chassis](chassis.md) - Housing and mounting
+- [Power](power/index.md) - Power supply specifications
+- [Chassis](chassis/index.md) - Housing and mounting
 
 ## Connectivity
 
-- [I/O](io.md) - Input/output connections
-- [Chaining](chaining.md) - Linking multiple systems
+- [I/O](io/index.md) - Input/output connections
+- [Chaining](chaining/index.md) - Linking multiple systems
 
 ## Compatibility
 
-- [Compatibility](compatibility.md) - Format compatibility
-- [Use Cases](use-cases.md) - Example configurations
+- [Compatibility](compatibility/index.md) - Format compatibility
+- [Use Cases](use-cases/index.md) - Example configurations

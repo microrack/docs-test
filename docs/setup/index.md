@@ -1,9 +1,9 @@
 ---
-title: Getting Started
+title: Setup
 description: Welcome to MICRORACK - your modular synthesizer platform
 ---
 
-# Getting Started with MICRORACK
+# Setup with MICRORACK
 
 Welcome to MICRORACK, the next generation of modular synthesis. This guide will help you get started with your MICRORACK system.
 
@@ -11,7 +11,7 @@ Welcome to MICRORACK, the next generation of modular synthesis. This guide will 
 
 MICRORACK is a compact, affordable, and versatile modular synthesizer platform designed for both beginners and experienced electronic musicians.
 
-## Quick Start
+## Setup
 
 1. Unbox your MICRORACK modules
 2. Connect power supply

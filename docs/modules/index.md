@@ -21,7 +21,6 @@ MICRORACK modules are compact synthesizer building blocks following the MICRORAC
 ## Modulation & Envelopes
 
 - [**mod-env**](mod-env/README.md) - Envelope Generator
-- [**mod-lfo**](mod-lfo/README.md) - Low Frequency Oscillator
 - [**mod-seq**](mod-seq/README.md) - Sequencer
 
 ## Utilities
@@ -44,6 +43,6 @@ MICRORACK modules are compact synthesizer building blocks following the MICRORAC
 ## Additional Resources
 
 - [Specification](../specification/index.md) - Technical specifications
-- [Getting Started](../getting-started/index.md) - Setup and first patches
+- [Setup](../setup/index.md) - Setup and first patches
 - [User Guide](../user-guide/index.md) - Patching techniques
 - [Tutorials](../tutorials/index.md) - Hands-on guides

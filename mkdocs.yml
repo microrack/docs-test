@@ -71,20 +71,21 @@ extra:
   generator: false
 extra_css:
 - assets/extra.css
-copyright: Copyright &copy; 2019-2025 MICRORACK Inc
+extra_javascript:
+- assets/extra.js
 nav:
-- Home:
-  - About: index.md
-  - Getting Started: getting-started/index.md
-  - Modules: modules/index.md
-  - Specification: specification/index.md
-  - Ecosystem: ecosystem/index.md
-  - Tutorials: tutorials/index.md
-  - User Guide: user-guide/index.md
-- Getting Started:
-  - Introduction: getting-started/index.md
-  - First Steps: getting-started/first-steps/index.md
-  - Setup: getting-started/setup/index.md
+- Setup:
+  - Introduction: index.md
+  - First Steps: setup/first-steps/index.md
+  - Setup: setup/setup/index.md
+- Ecosystem:
+  - Overview: ecosystem/index.md
+  - Power: ecosystem/power/index.md
+  - I/O: ecosystem/io/index.md
+  - Chassis: ecosystem/chassis/index.md
+  - Chaining: ecosystem/chaining/index.md
+  - Compatibility: ecosystem/compatibility/index.md
+  - Use Cases: ecosystem/use-cases/index.md
 - Modules:
   - Modules: modules/index.md
   - mod-clk: modules/mod-clk/README.md
@@ -108,20 +109,4 @@ nav:
 - Specification:
   - Specification: specification/index.md
   - Mechanical: specification/mechanical.md
-  - Electronical: specification/electronical.md
-- Ecosystem:
-  - ecosystem/index.md
-  - Power: ecosystem/power/index.md
-  - I/O: ecosystem/io/index.md
-  - Chassis: ecosystem/chassis/index.md
-  - Chaining: ecosystem/chaining/index.md
-  - Compatibility: ecosystem/compatibility/index.md
-  - Use Cases: ecosystem/use-cases/index.md
-- Tutorials:
-  - tutorials/index.md
-  - Bass Patch: tutorials/bass-patch/index.md
-  - Ambient Pad: tutorials/ambient-pad/index.md
-- User Guide:
-  - user-guide/index.md
-  - Patching Techniques: user-guide/patching-techniques/index.md
-  - Sound Design: user-guide/sound-design/index.md
+  - Electrical: specification/electrical.md

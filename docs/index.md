@@ -1,18 +1,24 @@
-# About MICRORACK
+---
+title: Setup
+description: Welcome to MICRORACK - your modular synthesizer platform
+---
 
-MICRORACK is a compact, affordable modular synthesizer system designed for learners, makers, and performers. This site holds the documentation, Specifications, and how-tos you need to build, patch, and integrate MICRORACK.
+# Setup with MICRORACK
 
-## Start Here
+Welcome to MICRORACK, the next generation of modular synthesis. This guide will help you get started with your MICRORACK system.
 
-- [Getting Started](getting-started/index.md) — setup and first patches
-- [Modules](modules/index.md) — module overviews and specs
-- [Specification](Specification/index.md) — mechanical and electronical specifications
-- [Ecosystem](ecosystem/index.md) — power, I/O, and system connectivity
-- [Tutorials](tutorials/index.md) — hands-on guides
-- [User Guide](user-guide/index.md) — techniques and best practices
+## What is MICRORACK?
 
-## Support
+MICRORACK is a compact, affordable, and versatile modular synthesizer platform designed for both beginners and experienced electronic musicians.
 
-- FAQ: [microrack.org/faq](https://microrack.org/faq)
-- Community: [Instagram](https://instagram.com/microrack)
-- Help: [support@microrack.org](mailto:support@microrack.org)
+## Setup
+
+1. Unbox your MICRORACK modules
+2. Connect power supply
+3. Patch your first sound
+4. Start exploring!
+
+## Next Steps
+
+- [First Steps](./setup/first-steps) - Learn the basics
+- [System Setup](./setup/setup) - Configure your system
