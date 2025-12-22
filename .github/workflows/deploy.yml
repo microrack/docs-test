@@ -6,8 +6,6 @@ on:
       - main
       - master
   workflow_dispatch:
-  repository_dispatch:
-    types: [specs-updated]
 
 permissions:
   contents: read
@@ -25,27 +23,11 @@ jobs:
       - name: Checkout docs
         uses: actions/checkout@v4
 
-      - name: Checkout specs
-        uses: actions/checkout@v4
-        with:
-          repository: microrack/specs-test
-          path: specification
-
       - name: Checkout modules
         uses: actions/checkout@v4
         with:
           repository: microrack/modules-test
           path: modules
-
-      - name: Copy specs content
-        run: |
-          mkdir -p docs/specification
-          cp specification/mechanical.md docs/specification/
-          cp specification/electrical.md docs/specification/
-          echo "=== Copied mechanical.md ==="
-          cat docs/specification/mechanical.md
-          echo "=== Copied electrical.md ==="
-          cat docs/specification/electrical.md
 
       - name: Copy modules content
         run: |

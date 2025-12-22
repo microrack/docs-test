@@ -40,6 +40,12 @@ def get_nav_sections():
                         'title': key,
                         'path': first_page if isinstance(first_page, str) else first_page
                     })
+                elif isinstance(value, str):
+                    # Handle direct links (like external URLs)
+                    sections.append({
+                        'title': key,
+                        'path': value
+                    })
     
     return sections
 
