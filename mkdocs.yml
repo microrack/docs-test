@@ -8,7 +8,7 @@ repo_url: https://github.com/microrack/docs-test
 theme:
   name: material
   logo: assets/logo.png
-  favicon: assets/logo.png
+  favicon: assets/icon.png
   palette:
   - media: '(prefers-color-scheme: light)'
     scheme: default
