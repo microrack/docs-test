@@ -17,6 +17,24 @@ for dir in modules/mod-*/; do
     cp -r "$dir" "docs/modules/"
 done
 
+echo "Cloning specs-test repository..."
+if [ -d "specification" ]; then
+    echo "specification directory already exists, pulling latest..."
+    cd specification && git pull && cd ..
+else
+    git clone https://github.com/microrack/specs-test.git specification
+fi
+
+echo "Copying specifications to docs/specification/..."
+mkdir -p docs/specification
+cp specification/docs/specs/1-mechanical.md docs/specification/mechanical.md
+cp specification/docs/specs/2-electrical.md docs/specification/electrical.md
+if [ -f specification/docs/index.md ]; then
+    cp specification/docs/index.md docs/specification/index.md
+else
+    echo "# Specifications" > docs/specification/index.md
+fi
+
 echo ""
 echo "Updating navigation with module list..."
 python3 scripts/update_nav.py

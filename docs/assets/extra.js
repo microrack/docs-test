@@ -41,14 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
     tabsList.appendChild(forumItem);
   }
 
-  // Add external link icon to Specification tab and mobile nav
-  const specLinks = document.querySelectorAll('a[href="https://microrack.github.io/specs-test/"]');
-  specLinks.forEach(link => {
-    if (!link.querySelector('.external-link-icon')) {
-      link.innerHTML += ' <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" style="vertical-align: middle; margin-left: 0.3rem; opacity: 0.7;"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9 9L8.59 14l9-9H14V3zM5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z"/></svg>';
-    }
-  });
-  
   // Add home and forum links to mobile drawer (fixed at bottom)
   const drawerNav = document.querySelector('.md-nav--primary');
   if (drawerNav) {
@@ -200,6 +192,17 @@ document.addEventListener('DOMContentLoaded', function() {
       if (currentSectionIndex >= 0 && currentSectionIndex < sections.length - 1) {
         const nextSection = sections[currentSectionIndex + 1];
         nextItem = { label: 'Next', href: nextSection.href, name: nextSection.name, fullPath: nextSection.fullPath };
+      }
+    }
+    
+    // Custom override: Electrical page should link to Ecosystem
+    if (currentPath.match(/\/specification\/electrical/)) {
+      // Find Ecosystem section
+      for (let i = 0; i < sections.length; i++) {
+        if (sections[i].fullPath.includes('ecosystem')) {
+          nextItem = { label: 'Next', href: sections[i].href, name: sections[i].name, fullPath: sections[i].fullPath };
+          break;
+        }
       }
     }
     

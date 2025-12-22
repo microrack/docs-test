@@ -106,4 +106,7 @@ nav:
   - mod-seq: modules/mod-seq/README.md
   - mod-vcf: modules/mod-vcf/README.md
   - mod-vco: modules/mod-vco/README.md
-- Specification: https://microrack.github.io/specs-test/
+- Specification:
+  - Specification: specification/index.md
+  - Mechanical: specification/mechanical.md
+  - Electrical: specification/electrical.md
