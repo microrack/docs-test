@@ -40,6 +40,9 @@ else
 fi
 
 echo ""
+echo "Updating navigation with module list..."
+python3 scripts/update_nav.py
+
 echo "Updating index page with navigation sections..."
 python3 scripts/update_index.py
 
