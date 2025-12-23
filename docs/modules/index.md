@@ -4,6 +4,18 @@ MICRORACK modules are compact synthesizer building blocks following the MICRORAC
 
 > **Source Repository:** [github.com/microrack/modules-test](https://github.com/microrack/modules-test)
 
+## Versioning
+
+For convenience MICRORACK modules are versioned by semver-like increment (e.g. v1.0 -> v1.1) which is placed on the bottom side of the boards.
+
+Manufacturers, enthusiasts and MICRORACK team itself may add minor improvements to some module designs over time.
+
+## Consistent Platform
+
+New creative modules and accessories may emerge but main system standards remains the same across manufacturers and enthusiasts.
+
+MICRORACK Specification provides stable design foundations for seamless experience across designs, while building blocks variability grows with community and further enriching your setups.
+
 ## Sound Generation
 
 - [**mod-vco**](mod-vco/README.md) - Voltage Controlled Oscillator
@@ -43,6 +55,6 @@ MICRORACK modules are compact synthesizer building blocks following the MICRORAC
 ## Additional Resources
 
 - [Specification](../specification/index.md) - Technical specifications
-- [Setup](../setup/index.md) - Setup and first patches
+- [Getting Started](../getting-started/index.md) - Setup and first patches
 - [User Guide](../user-guide/index.md) - Patching techniques
 - [Tutorials](../tutorials/index.md) - Hands-on guides

@@ -1,6 +1,9 @@
 # Specification 
 
-> **Source Repository:** [github.com/microrack/specs-test](https://github.com/microrack/specs-test)
+!!! info "Licence"
+    MICRORACK Modules Specification is published under the [CERN Open Hardware Licence (CERN-OHL-W)](LICENSE.md).
+
+    **Source Repository:** [github.com/microrack/specs-test](https://github.com/microrack/specs-test)
 
 ## Overview
 
@@ -8,8 +11,8 @@ The MICRORACK Standard defines basic technical specifications for any designers 
 
 MICRORACK specification is designed as an open platform. These specifications ensure interoperability between modules and accessories from different designers and manufacturers.
 
-- [Mechanical Specs](mechanical.md) - Module dimensions, board outlines, power contacts
-- [Electrical Specs](electrical.md) - Voltage rails, signal levels, impedance
+- [Mechanical Specs](specs/1-mechanical.md) - Module dimensions, board outlines, power contacts
+- [Electrical Specs](specs/2-electrical.md) - Voltage rails, signal levels, impedance
 
 ## Hardware Versioning
 

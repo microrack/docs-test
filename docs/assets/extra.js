@@ -28,6 +28,21 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add home and forum links to tabs row (aligned right on desktop)
   const tabsList = document.querySelector('.md-tabs__list');
   if (tabsList) {
+    // Add icons to navigation tabs
+    const tabIcons = {
+      'Setup': '<span style="margin-right: 0.3rem; font-size: 1.1em; vertical-align: middle; display: inline-block; transform: translateY(-1px);">↝</span>',
+      'Ecosystem': '<span style="margin-right: 0.3rem; line-height: 0.85em; font-size: 1.4em; vertical-align: middle; display: inline-block; transform: translateY(-3px) scaleX(-1);">⎌</span>',
+      'Modules': '<span style="margin-right: 0.3rem; font-size: 1.1em; vertical-align: middle; display: inline-block; transform: translateY(-1px);">⊶</span>',
+      'Specification': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" style="vertical-align: middle; margin-right: 0.3rem;"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6m4 18H6V4h7v5h5v11m-5-5H8v-2h5v2m2 4H8v-2h7v2"/></svg>'
+    };
+    
+    document.querySelectorAll('.md-tabs__link').forEach(link => {
+      const text = link.textContent.trim();
+      if (tabIcons[text]) {
+        link.innerHTML = tabIcons[text] + text;
+      }
+    });
+    
     // Home link (left of forum)
     const homeItem = document.createElement('li');
     homeItem.className = 'md-tabs__item md-tabs__item--home';
