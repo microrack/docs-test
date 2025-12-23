@@ -2,13 +2,29 @@
 """
 Update mkdocs.yml with module navigation entries.
 Scans docs/modules/ for mod-* directories and updates the nav section.
+Extracts H1 titles from README.md files for navigation labels.
 """
 
 import yaml
+import re
 from pathlib import Path
 
+def get_h1_title(readme_path):
+    """Extract the first H1 title from a README.md file."""
+    try:
+        with open(readme_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith('# '):
+                    # Remove the "# " prefix and return the title as-is
+                    title = line[2:].strip()
+                    return title
+        return None
+    except Exception:
+        return None
+
 def get_module_list():
-    """Scan docs/modules for mod-* directories."""
+    """Scan docs/modules for mod-* directories and extract titles."""
     modules_dir = Path("docs/modules")
     if not modules_dir.exists():
         return []
@@ -18,7 +34,8 @@ def get_module_list():
         if item.is_dir() and item.name.startswith("mod-"):
             readme = item / "README.md"
             if readme.exists():
-                modules.append(item.name)
+                title = get_h1_title(readme) or item.name
+                modules.append((item.name, title))
     
     return modules
 
@@ -38,13 +55,13 @@ def update_mkdocs_yml():
         print("Error: nav section not found in mkdocs.yml")
         return
     
-    # Get module list
+    # Get module list with titles
     modules = get_module_list()
     
     # Build modules nav section
     modules_nav = [{"Modules": "modules/index.md"}]
-    for module in modules:
-        modules_nav.append({module: f"modules/{module}/README.md"})
+    for folder_name, title in modules:
+        modules_nav.append({title: f"modules/{folder_name}/README.md"})
     
     # Find and update the Modules section in nav
     nav = config['nav']

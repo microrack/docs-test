@@ -88,24 +88,24 @@ nav:
   - Use Cases: ecosystem/use-cases/index.md
 - Modules:
   - Modules: modules/index.md
-  - mod-clk: modules/mod-clk/README.md
-  - mod-comp: modules/mod-comp/README.md
-  - mod-delay: modules/mod-delay/README.md
-  - mod-env: modules/mod-env/README.md
-  - mod-eq: modules/mod-eq/README.md
-  - mod-in-63: modules/mod-in-63/README.md
-  - mod-jacket: modules/mod-jacket/README.md
-  - mod-key: modules/mod-key/README.md
-  - mod-lpg: modules/mod-lpg/README.md
-  - mod-midi: modules/mod-midi/README.md
-  - mod-mix: modules/mod-mix/README.md
-  - mod-noise: modules/mod-noise/README.md
-  - mod-out-35: modules/mod-out-35/README.md
-  - mod-out-63: modules/mod-out-63/README.md
-  - mod-sat: modules/mod-sat/README.md
-  - mod-seq: modules/mod-seq/README.md
-  - mod-vcf: modules/mod-vcf/README.md
-  - mod-vco: modules/mod-vco/README.md
+  - counter: modules/mod-clk/README.md
+  - compressor: modules/mod-comp/README.md
+  - delay: modules/mod-delay/README.md
+  - envelope: modules/mod-env/README.md
+  - equalizer: modules/mod-eq/README.md
+  - input 6.3: modules/mod-in-63/README.md
+  - jacket 3.5mm: modules/mod-jacket/README.md
+  - stylo: modules/mod-key/README.md
+  - low-pass gate: modules/mod-lpg/README.md
+  - midi - cv: modules/mod-midi/README.md
+  - vca / mixer: modules/mod-mix/README.md
+  - noise + s&h: modules/mod-noise/README.md
+  - output 3.5: modules/mod-out-35/README.md
+  - output 6.3: modules/mod-out-63/README.md
+  - saturator: modules/mod-sat/README.md
+  - sequencer: modules/mod-seq/README.md
+  - filter: modules/mod-vcf/README.md
+  - oscillator: modules/mod-vco/README.md
 - Specification:
   - Specification: specification/index.md
   - Mechanical: specification/mechanical.md
