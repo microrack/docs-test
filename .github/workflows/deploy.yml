@@ -54,12 +54,16 @@ jobs:
 
       - name: Copy modules content
         run: |
+          mkdir -p docs/modules
+          # Copy modules index page
+          cp modules/docs/index.md docs/modules/index.md
           # Copy each module directory with all its contents
-          for dir in modules/mod-*/; do
+          for dir in modules/docs/mod-*/; do
             module=$(basename "$dir")
             cp -r "$dir" "docs/modules/"
             echo "Copied ${module}/"
           done
+          echo "=== Copied module files ==="
           ls -la docs/modules/
 
       - name: Setup Python
@@ -69,9 +73,6 @@ jobs:
           
       - name: Install dependencies
         run: pip install mkdocs-material mkdocs-minify-plugin pyyaml
-      
-      - name: Update navigation
-        run: python scripts/update_nav.py
           
       - name: Build site
         run: mkdocs build

@@ -11,7 +11,11 @@ fi
 
 echo "Copying modules to docs/modules/..."
 mkdir -p docs/modules
-for dir in modules/mod-*/; do
+# Copy modules index page
+cp modules/docs/index.md docs/modules/index.md
+echo "  Copied index.md"
+# Copy each module directory
+for dir in modules/docs/mod-*/; do
     module=$(basename "$dir")
     echo "  Copying ${module}/"
     cp -r "$dir" "docs/modules/"
@@ -36,9 +40,6 @@ else
 fi
 
 echo ""
-echo "Updating navigation with module list..."
-python3 scripts/update_nav.py
-
 echo "Updating index page with navigation sections..."
 python3 scripts/update_index.py
 
