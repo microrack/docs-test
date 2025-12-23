@@ -77,9 +77,9 @@ nav:
 - Setup:
   - Introduction: index.md
   - First Steps: setup/first-steps/index.md
-  - Setup: setup/setup/index.md
+  - System Setup: setup/system-setup.md
 - Ecosystem:
-  - Overview: ecosystem/index.md
+  - Ecosystem: ecosystem/index.md
   - Power: ecosystem/power/index.md
   - I/O: ecosystem/io/index.md
   - Chassis: ecosystem/chassis/index.md
