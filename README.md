@@ -1,30 +1,16 @@
-# MICRORACK Documentation
+# About MICRORACK
 
-Official documentation for the MICRORACK modular synthesizer system.
+MICRORACK is a compact, affordable modular synthesizer system designed for learners, makers, and performers. This site holds the documentation, Specifications, and how-tos you need to build, patch, and integrate MICRORACK.
 
-## Overview
+## Start Here
 
-MICRORACK is a compact, affordable modular synthesizer system designed for learners, makers, and performers. This site provides everything you need to build, patch, and integrate MICRORACK modules.
+- [Setup](index.md) — setup and first patches
+- [Ecosystem](ecosystem/index.md) — power, I/O, and system connectivity
+- [Modules](modules/index.md) — module overviews and specs
+- [Specification](specification/index.md) — mechanical and electrical specifications
 
-Visit the live documentation at: **[docs.microrack.org](https://docs.microrack.org)**
+## Support
 
-## What's Inside
-
-- **🚀 Setup**: Getting started guides and first patches.
-- **🔗 Ecosystem**: Detailed information on power, I/O, chassis, and system connectivity.
-- **⊞ Modules**: Comprehensive overviews and technical details for all MICRORACK modules.
-- **📐 Specification**: Official mechanical and electrical standards for the platform.
-
-## Project Structure
-
-This site is built using [MkDocs](https://www.mkdocs.org/) with the [Material theme](https://squidfunk.github.io/mkdocs-material/). It dynamically aggregates content from multiple MICRORACK repositories to ensure the documentation is always up-to-date with the latest module designs and specifications.
-
-- **Modules**: Sourced from [microrack/modules-test](https://github.com/microrack/modules-test)
-- **Specifications**: Sourced from [microrack/specs-test](https://github.com/microrack/specs-test)
-
-## Contributing
-
-If you find errors or have suggestions for improvement, please open an issue or a pull request in the respective repository.
-
----
-© 2019-2025 MICRORACK | [microrack.org](https://microrack.org)
+- FAQ: [microrack.org/faq](https://microrack.org/faq)
+- Community: [Instagram](https://instagram.com/microrack)
+- Help: [support@microrack.org](mailto:support@microrack.org)

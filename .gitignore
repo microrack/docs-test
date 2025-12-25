@@ -1,24 +1,3 @@
-# Build artifacts
-site/
-
-# Python virtual environment
-.venv/
-venv/
-env/
-
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Cloned repositories (fetched during build)
-specs-repo/
-modules-repo/
-
-# Copied content from cloned repos (fetched during build)
-docs/modules/
-docs/specification/
-
 # IDE
 .vscode/
 .idea/
