@@ -12,15 +12,12 @@ __pycache__/
 *$py.class
 
 # Cloned repositories (fetched during build)
-/modules/
-/specification/
+specs-repo/
+modules-repo/
 
 # Copied content from cloned repos (fetched during build)
-docs/modules/*
-!docs/modules/index.md
-
-docs/specification/*
-!docs/specification/index.md
+docs/modules/
+docs/specification/
 
 # IDE
 .vscode/

@@ -94,19 +94,19 @@ nav:
   - envelope: modules/mod-env/README.md
   - equalizer: modules/mod-eq/README.md
   - input 6.3: modules/mod-in-63/README.md
-  - jacket 3.5mm: modules/mod-jacket/README.md
+  - jacket 3.5: modules/mod-jacket/README.md
   - stylo: modules/mod-key/README.md
-  - low-pass gate: modules/mod-lpg/README.md
-  - midi - cv: modules/mod-midi/README.md
-  - vca / mixer: modules/mod-mix/README.md
+  - lowpass gate: modules/mod-lpg/README.md
+  - midi→cv: modules/mod-midi/README.md
   - noise + s&h: modules/mod-noise/README.md
   - output 3.5: modules/mod-out-35/README.md
   - output 6.3: modules/mod-out-63/README.md
   - saturator: modules/mod-sat/README.md
   - sequencer: modules/mod-seq/README.md
+  - vca mixer: modules/mod-vca/README.md
   - filter: modules/mod-vcf/README.md
   - oscillator: modules/mod-vco/README.md
 - Specification:
   - Specification: specification/index.md
-  - Mechanical: specification/mechanical.md
-  - Electrical: specification/electrical.md
+  - Mechanical: specification/mechanical/README.md
+  - Electrical: specification/electrical/README.md
