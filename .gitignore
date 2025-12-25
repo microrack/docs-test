@@ -14,10 +14,14 @@ __pycache__/
 # Cloned repositories (fetched during build)
 specs-repo/
 modules-repo/
+master-content/
 
 # Copied content from cloned repos (fetched during build)
 docs/modules/
 docs/specification/
+docs/ecosystem/
+docs/setup/
+docs/index.md
 
 # IDE
 .vscode/

@@ -3,8 +3,7 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main
-      - master
+      - site
   workflow_dispatch:
   repository_dispatch:
     types: [specs-updated, modules-updated]
@@ -22,8 +21,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout docs
+      - name: Checkout site branch
         uses: actions/checkout@v4
+
+      - name: Checkout master branch content
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: master-content
 
       - name: Checkout specs
         uses: actions/checkout@v4
@@ -38,6 +43,27 @@ jobs:
           repository: microrack/modules
           ref: master
           path: modules-repo
+
+      - name: Copy local content from master
+        run: |
+          # Copy README.md as index page
+          cp master-content/README.md docs/index.md
+          echo "Copied README.md -> docs/index.md"
+          
+          # Copy ecosystem folder
+          rm -rf docs/ecosystem
+          cp -r master-content/ecosystem docs/
+          echo "Copied ecosystem/"
+          
+          # Copy setup folder
+          rm -rf docs/setup
+          cp -r master-content/setup docs/
+          echo "Copied setup/"
+          
+          # Clean up
+          rm -rf master-content
+          echo "=== Copied local content ==="
+          ls -la docs/
 
       - name: Copy specs content
         run: |
