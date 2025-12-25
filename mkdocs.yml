@@ -76,16 +76,16 @@ extra_javascript:
 nav:
 - Setup:
   - Introduction: index.md
-  - First Steps: setup/first-steps/index.md
+  - First Steps: setup/first-steps/README.md
   - System Setup: setup/system-setup.md
 - Ecosystem:
-  - Ecosystem: ecosystem/index.md
-  - Power: ecosystem/power/index.md
-  - I/O: ecosystem/io/index.md
-  - Chassis: ecosystem/chassis/index.md
-  - Chaining: ecosystem/chaining/index.md
-  - Compatibility: ecosystem/compatibility/index.md
-  - Use Cases: ecosystem/use-cases/index.md
+  - Ecosystem: ecosystem/README.md
+  - Power: ecosystem/power/README.md
+  - I/O: ecosystem/io/README.md
+  - Chassis: ecosystem/chassis/README.md
+  - Chaining: ecosystem/chaining/README.md
+  - Compatibility: ecosystem/compatibility/README.md
+  - Use Cases: ecosystem/use-cases/README.md
 - Modules:
   - Modules: modules/index.md
   - counter: modules/mod-clk/README.md
