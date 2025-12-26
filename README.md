@@ -10,10 +10,10 @@ Visit the live documentation at: **[docs.microrack.org](https://docs.microrack.o
 
 ## What's Inside
 
-- **🚀 Setup**: Getting started guides and first patches.
-- **🔗 Ecosystem**: Detailed information on power, I/O, chassis, and system connectivity.
-- **⊞ Modules**: Comprehensive overviews and technical details for all MICRORACK modules.
-- **📐 Specification**: Official mechanical and electrical standards for the platform.
+- **↝ Setup**: Getting started guides and first patches.
+- **⎌ Ecosystem**: Detailed information on power, I/O, chassis, and system connectivity.
+- **⊶ Modules**: Comprehensive overviews and technical details for all MICRORACK modules.
+- **⊾ Specification**: Official mechanical and electrical standards for the platform.
 
 ## Project Structure
 
