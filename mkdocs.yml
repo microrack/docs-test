@@ -77,7 +77,7 @@ nav:
 - Setup:
   - Introduction: index.md
   - First Steps: setup/first-steps/README.md
-  - System Setup: setup/system-setup.md
+  - System Setup: setup/README.md
 - Ecosystem:
   - Ecosystem: ecosystem/README.md
   - Power: ecosystem/power/README.md
