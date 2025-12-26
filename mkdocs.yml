@@ -76,16 +76,19 @@ extra_javascript:
 nav:
 - Setup:
   - Introduction: index.md
-  - First Steps: setup/first-steps/README.md
+  - Safety & Orientation: setup/10-safety/README.md
+  - Powering Up: setup/20-powering-up/README.md
+  - Your First Patch: setup/30-first-patch/README.md
   - System Setup: setup/README.md
 - Ecosystem:
   - Ecosystem: ecosystem/README.md
-  - Power: ecosystem/power/README.md
-  - I/O: ecosystem/io/README.md
-  - Chassis: ecosystem/chassis/README.md
-  - Chaining: ecosystem/chaining/README.md
-  - Compatibility: ecosystem/compatibility/README.md
-  - Use Cases: ecosystem/use-cases/README.md
+  - Breadboard Architecture: ecosystem/10-breadboard/README.md
+  - Power Distribution: ecosystem/20-power/README.md
+  - Connections & Patching: ecosystem/30-connections/README.md
+  - Chassis & Mounting: ecosystem/40-chassis/README.md
+  - Compatibility: ecosystem/50-compatibility/README.md
+  - Use Cases: ecosystem/60-use-cases/README.md
+  - Community & Forum: ecosystem/70-community/README.md
 - Modules:
   - Modules: modules/index.md
   - counter: modules/mod-clk/README.md
