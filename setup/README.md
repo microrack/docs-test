@@ -1,54 +1,51 @@
 # System Setup
 
+> 1 min read
+
 Welcome to the MICRORACK ecosystem! This guide will help you set up your system and make your first sounds in minutes.
 
-## What's in the Box?
-
-A typical MICRORACK starter kit includes:
-
-| Item | Description |
-|------|-------------|
-| **Power Module** | The heart of your system — provides stable voltage to all modules |
-| **Breadboard** | Your canvas for building and patching (830-point recommended) |
-| **Modules** | Synthesizer building blocks (VCO, VCF, VCA, etc.) |
-| **Patch Cables** | Jumper wires for connecting signals between modules |
-| **Power Supply** | DC adapter to power the system |
-
-<!-- GAP: Confirm exact kit contents for each SKU -->
-
-## Prerequisites
+<!-- picture of some setup -->
 
 Before you begin, ensure you have:
 
-- ☐ A flat, stable workspace
-- ☐ Adequate lighting
-- ☐ Headphones or a speaker with 3.5mm or 6.3mm input
-- ☐ The included power supply (or compatible adapter)
+- Headphones or a speaker with 3.5mm or 6.3mm Jack
+- Power Bank, USB Charger or DC-Jack Power Supply
+- Breadboard, Power & Output Modules (included in all Kits)
 
-## Quick Start Overview
+## What's in the Box?
 
-| Step | Time | Description |
-|------|------|-------------|
-| 1. Safety & Orientation | 2 min | Learn the "notch rule" for module placement |
-| 2. Powering Up | 2 min | Connect and test your Power Module |
-| 3. First Patch | 5 min | Make your first sound! |
+A typical MICRORACK Kit includes:
 
-**Total time to first sound: ~10 minutes**
+| | |
+|------|-------------|
+| **Breadboard** | Your canvas for building and patching (830-point recommended) |
+| **Modules** | MICRORACK building blocks ([power](../modules/power/), [oscillator](../modules/oscillator/), [filter](../modules/filter/), [output](../modules/output/), etc.) |
+| **Cable Set** | Silicon patch wires, alligator clip, chaining jumpers |
+
+<!-- todo GAP: Confirm exact kit contents for each SKU -->
+
+## Quick Start
+
+<!-- todo: use styled tiles with links to sections for each step -->
+
+| Step | Time |
+|------|------|
+| 1. Safety & Tips | 2 min |
+| 2. Powering Up | 2 min |
+| 3. First Patch | 5 min |
+| 4. Ecosystem | 10 min |
 
 ## Need Help?
 
+<!-- todo: smaller narrower tiles with external link icons -->
+
 If you run into any issues during setup, we're here to help:
 
-| Resource | Link |
+|  |  |
 |----------|------|
 | **Forum Support** | [Create a thread](https://forum.microrack.org/c/support) in the support section |
-| **FAQ** | [Frequently Asked Questions](https://microrack.org/faq) |
-| **Email** | [support@microrack.org](mailto:support@microrack.org) |
-
----
-
-### Next Steps
-
-1. [Safety & Orientation](10-safety/) — The "notch rule" and handling basics
-2. [Powering Up](20-powering-up/) — Connect your Power Module
-3. [Your First Patch](30-first-patch/) — Make sound!
+| **Reddit** | Post on [r/microrack](https://reddit.com/r/microrack) |
+| **Instagram** | DM [@microrack.synth](https://instagram.com/microrack.synth) |
+| **Telegram** | Join the [channel](https://t.me/microrack) |
+| **Email** | Drop a letter to [support@microrack.org](mailto:support@microrack.org) |
+| **GitHub** | Follow, [star](https://github.com/microrack) and comment |

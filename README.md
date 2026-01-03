@@ -4,6 +4,8 @@ Welcome to the official MICRORACK documentation. MICRORACK is the most accessibl
 
 ## Quick Start
 
+<!-- todo: use styled tiles with links to sections for each part of the docs -->
+
 New to MICRORACK? Start here:
 
 1. **[System Setup](setup/)** — Unbox, power up, and make your first sound
@@ -41,6 +43,15 @@ Open hardware specification for module designers. *(Fetched on site build)*
 
 ---
 
+## Open Platform
+
+MICRORACK is an open platform. Any enthusiast or brand can create and distribute compatible modules and accessories.
+
+- **Specification License:** [CERN Open Hardware Licence (CERN-OHL-W)](https://specs.microrack.org/LICENSE.md)
+- **Contribute:** Submit modules, documentation improvements, or community designs via GitHub
+
+---
+
 ## Resources
 
 | Resource | Link |
@@ -53,13 +64,4 @@ Open hardware specification for module designers. *(Fetched on site build)*
 
 ---
 
-## Open Platform
-
-MICRORACK is an open platform. Any enthusiast or brand can create and distribute compatible modules.
-
-- **Specification License:** [CERN Open Hardware Licence (CERN-OHL-W)](https://specs.microrack.org/LICENSE.md)
-- **Contribute:** Submit modules, documentation improvements, or community designs via GitHub
-
----
-
-*Built with ❤️ by the MICRORACK team and community.*
+*Built with ❤️ by the MICRORACK Team.*
