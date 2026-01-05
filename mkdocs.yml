@@ -77,9 +77,7 @@ nav:
 - Setup:
   - System Setup: setup/index.md
   - Safety: setup/10-safety/README.md
-  - Powering Up: setup/20-powering-up/README.md
-  - First Patch: setup/40-first-patch/README.md
-  - Use Cases: setup/60-use-cases/README.md
+  - Use Cases: setup/20-use-cases/README.md
 - Ecosystem:
   - Ecosystem: ecosystem/index.md
   - Breadboard Architecture: ecosystem/10-breadboard/README.md
