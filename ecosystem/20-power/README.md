@@ -6,22 +6,6 @@ MICRORACK uses a standardized power distribution system to ensure all modules re
 
 The system relies on four power rails distributed through the breadboard:
 
-| Rail | Voltage | Color | Purpose |
-|------|---------|-------|---------|
-| **V12+** | +12V | Red | Positive supply for analog circuits |
-| **V5+** | +5V | — | Auxiliary supply for digital logic & LEDs |
-| **GND** | 0V | Black | Common ground reference |
-| **V12-** | -12V | Blue | Negative supply for bipolar signals |
-
-> **Note:** The V5+ rail is intended for powering digital logic and LED indicators only. Do not use it as a voltage reference — modules should derive local regulated supplies internally.
-
-## Current Limits
-
-While breadboard rails are convenient, they have physical limits:
-
-- **Maximum per rail:** 100 mA per individual power rail (per MICRORACK Specification)
-- **Voltage tolerance:** ±10% on all power rails
-- **Ripple:** Up to 200 mV peak-to-peak is acceptable
 
 ### Typical Module Consumption
 
@@ -40,7 +24,7 @@ Power flows from the **Power Module** through the breadboard rails. Each MICRORA
 
 ## Hot-Swap Considerations
 
-MICRORACK modules are designed to tolerate hot-swapping, but transient voltage spikes may occur when inserting modules with power on. For best practice, power off before adding or removing modules.
+MICRORACK modules are designed to tolerate hot-swapping, but transient voltage spikes may occur when inserting modules with power on. For best practice, lower volume and/or power off before adding or removing modules.
 
 ## Troubleshooting Power
 

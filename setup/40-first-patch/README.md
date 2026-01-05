@@ -1,4 +1,4 @@
-# Your First Patch
+# First Patch
 
 Let's make some noise! This "Hello World" patch will guide you through the basics of signal flow in MICRORACK.
 

@@ -12,6 +12,21 @@ A standard breadboard consists of:
 | **Power Rails** | The horizontal rows at the top and bottom (marked with + and – or red and blue lines). |
 | **Center Gap** | The divider that separates the two halves of the terminal strips. |
 
+
+A breadboard is the base platform where you will build your MICRORACK system. It distributes power and provides mechanical support for all your modules.
+
+> Compatible full-size 830 tie-point breadboards are included in every MICRORACK Kit and widely available online or at local electronics stores.
+
+![Breadboard](breadboard.png)
+
+MICRORACK Standard 830 tie-point breadboard has two main sections:
+
+1. **Horizontal Power Rails:** Located on the top and bottom of breadboard, these rails provide power to all your modules.
+2. **Vertical Terminals:** The central area of breadboard which is not used for power or signals, but can help you extend connections or build custom circuits around your MICRORACK setup.
+
+For more details on breadboards and how to use them, check out the [Breadboard](../../ecosystem/10-breadboard/) page.
+
+
 ### Recommended Breadboard Sizes
 
 | Size | Contact Points | Modules | Best For |
