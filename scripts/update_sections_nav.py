@@ -91,19 +91,19 @@ def update_mkdocs_nav():
     for i, section in enumerate(nav):
         if isinstance(section, dict):
             if 'Setup' in section:
-                # Build new Setup nav: Introduction first, then items, then System Setup
-                setup_nav = [{'Introduction': 'index.md'}]
+                # Build new Setup nav: System Setup first, then items
+                setup_nav = [{'System Setup': 'setup/index.md'}]
                 for item in setup_items:
                     setup_nav.append({item['title']: item['path']})
-                setup_nav.append({'System Setup': 'setup/README.md'})
                 nav[i] = {'Setup': setup_nav}
                 print(f"Updated Setup with {len(setup_items)} items")
                 
             elif 'Ecosystem' in section:
                 # Build new Ecosystem nav: Overview first, then items
-                ecosystem_nav = [{'Ecosystem': 'ecosystem/README.md'}]
+                ecosystem_nav = [{'Ecosystem': 'ecosystem/index.md'}]
                 for item in ecosystem_items:
                     ecosystem_nav.append({item['title']: item['path']})
+
                 nav[i] = {'Ecosystem': ecosystem_nav}
                 print(f"Updated Ecosystem with {len(ecosystem_items)} items")
     

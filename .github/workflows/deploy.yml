@@ -53,11 +53,13 @@ jobs:
           # Copy ecosystem folder
           rm -rf docs/ecosystem
           cp -r master-content/ecosystem docs/
+          mv docs/ecosystem/README.md docs/ecosystem/index.md
           echo "Copied ecosystem/"
           
           # Copy setup folder
           rm -rf docs/setup
           cp -r master-content/setup docs/
+          mv docs/setup/README.md docs/setup/index.md
           echo "Copied setup/"
           
           # Clean up

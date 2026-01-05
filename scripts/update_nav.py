@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Update mkdocs.yml navigation with modules from fetched modules-test repo.
+Update mkdocs.yml navigation with modules from fetched modules repo.
 Scans docs/modules/mod-*/README.md and extracts H1 titles for nav entries.
 """
 

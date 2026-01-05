@@ -1,43 +1,64 @@
 #!/bin/bash
 # Clone external repositories for local development
 
-echo "Cloning modules-test repository..."
-if [ -d "modules" ]; then
-    echo "modules directory already exists, pulling latest..."
-    cd modules && git pull && cd ..
+# 1. Fetch content from master branch (Setup, Ecosystem, index)
+echo "Fetching master branch content..."
+mkdir -p master-content
+git archive master | tar -x -C master-content
+cp master-content/README.md docs/index.md
+rm -rf docs/setup docs/ecosystem
+cp -r master-content/setup docs/
+mv docs/setup/README.md docs/setup/index.md
+cp -r master-content/ecosystem docs/
+mv docs/ecosystem/README.md docs/ecosystem/index.md
+rm -rf master-content
+echo "  Copied Setup and Ecosystem from master"
+
+echo "Cloning modules repository..."
+if [ -d "modules-repo" ]; then
+    echo "modules-repo directory already exists, pulling latest..."
+    cd modules-repo && git pull && cd ..
 else
-    git clone https://github.com/microrack/modules-test.git modules
+    git clone https://github.com/microrack/modules.git modules-repo
 fi
 
 echo "Copying modules to docs/modules/..."
 mkdir -p docs/modules
 # Copy modules index page
-cp modules/docs/index.md docs/modules/index.md
+cp modules-repo/README.md docs/modules/index.md
 echo "  Copied index.md"
 # Copy each module directory
-for dir in modules/docs/mod-*/; do
+for dir in modules-repo/mod-*/; do
     module=$(basename "$dir")
     echo "  Copying ${module}/"
     cp -r "$dir" "docs/modules/"
 done
 
-echo "Cloning specs-test repository..."
-if [ -d "specification" ]; then
-    echo "specification directory already exists, pulling latest..."
-    cd specification && git pull && cd ..
+echo "Cloning specs repository..."
+if [ -d "specs-repo" ]; then
+    echo "specs-repo directory already exists, pulling latest..."
+    cd specs-repo && git pull && cd ..
 else
-    git clone https://github.com/microrack/specs-test.git specification
+    git clone https://github.com/microrack/specs.git specs-repo
 fi
 
 echo "Copying specifications to docs/specification/..."
 mkdir -p docs/specification
-cp specification/docs/specs/1-mechanical.md docs/specification/mechanical.md
-cp specification/docs/specs/2-electrical.md docs/specification/electrical.md
-if [ -f specification/docs/index.md ]; then
-    cp specification/docs/index.md docs/specification/index.md
-else
-    echo "# Specifications" > docs/specification/index.md
-fi
+cp specs-repo/README.md docs/specification/index.md
+
+# Copy mechanical folder (README.md + images)
+mkdir -p docs/specification/mechanical
+cp -r specs-repo/mechanical/* docs/specification/mechanical/
+echo "  Copied mechanical spec"
+
+# Copy electrical folder (README.md + images)
+mkdir -p docs/specification/electrical
+cp -r specs-repo/electrical/* docs/specification/electrical/
+echo "  Copied electrical spec"
+
+# Cleanup cloned repos to keep root clean
+rm -rf modules-repo specs-repo
+echo "  Cleaned up temporary repositories"
 
 echo ""
 echo "Updating navigation with sections..."

@@ -75,20 +75,19 @@ extra_javascript:
 - assets/extra.js
 nav:
 - Setup:
-  - Introduction: index.md
-  - Safety & Orientation: setup/10-safety/README.md
+  - System Setup: setup/index.md
+  - Safety: setup/10-safety/README.md
   - Powering Up: setup/20-powering-up/README.md
-  - Your First Patch: setup/30-first-patch/README.md
-  - System Setup: setup/README.md
+  - First Patch: setup/40-first-patch/README.md
+  - Use Cases: setup/60-use-cases/README.md
 - Ecosystem:
-  - Ecosystem: ecosystem/README.md
+  - Ecosystem: ecosystem/index.md
   - Breadboard Architecture: ecosystem/10-breadboard/README.md
   - Power Distribution: ecosystem/20-power/README.md
   - Connections & Patching: ecosystem/30-connections/README.md
   - Chassis & Mounting: ecosystem/40-chassis/README.md
   - Compatibility: ecosystem/50-compatibility/README.md
-  - Use Cases: ecosystem/60-use-cases/README.md
-  - Community & Forum: ecosystem/70-community/README.md
+  - Community & Forum: ecosystem/60-community/README.md
 - Modules:
   - Modules: modules/index.md
   - counter: modules/mod-clk/README.md
