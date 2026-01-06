@@ -91,8 +91,8 @@ def update_mkdocs_nav():
     for i, section in enumerate(nav):
         if isinstance(section, dict):
             if 'Setup' in section:
-                # Build new Setup nav: System Setup first, then items
-                setup_nav = [{'System Setup': 'setup/index.md'}]
+                # Build new Setup nav: Setup first, then items
+                setup_nav = [{'Setup': 'setup/index.md'}]
                 for item in setup_items:
                     setup_nav.append({item['title']: item['path']})
                 nav[i] = {'Setup': setup_nav}

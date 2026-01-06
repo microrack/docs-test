@@ -6,7 +6,7 @@ Welcome to the official MICRORACK documentation. MICRORACK is the most accessibl
 
 New to MICRORACK? Start here:
 
-1. **[System Setup](setup/)** — Unbox, power up, and make your first sound
+1. **[Setup](setup/)** — Unbox, power up, and make your first sound
 2. **[Your First Patch](setup/30-first-patch/)** — A step-by-step guide to your first synth voice
 
 ## Documentation Sections

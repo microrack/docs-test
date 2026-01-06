@@ -75,7 +75,7 @@ extra_javascript:
 - assets/extra.js
 nav:
 - Setup:
-  - System Setup: setup/index.md
+  - Setup: setup/index.md
   - Safety: setup/10-safety/README.md
   - Use Cases: setup/20-use-cases/README.md
 - Ecosystem:
